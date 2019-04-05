@@ -2,32 +2,36 @@
 \chapter{REFERENCIAL TEÓRICO}
 \label{chap:ref_teo}
 
-\section{Ferramentas de desenvolvimento}
-\subsection{JSX}
+\section{FERRAMENTAS DE DESENVOLVIMENTO}
 
-É uma extensão de sintaxe para \textit{JavaScript}, recomendada para auxílio na construção de interface gráfica e que será utilizada com o \textit{React} e também com o \textit{React Native} para falicitar a estrutura de códigos durante o desenvolvimento do \textit{front-end}. O \textit{JSX} necessita de um transpilador e o mais utilizado é o \textit{Babel} e a sintaxe dele é muito semelhante à do \textit{XML}.  
+\subsection{JSX}
+O \textit{JSX} é uma extensão de sintaxe para \textit{JavaScript}, recomendada para auxílio na construção de interface gráfica que será utilizada com o \textit{React} e também com o \textit{React Native} para falicitar a estrutura de códigos durante o desenvolvimento do \textit{front-end}. Ele necessita de um tradutor, ou seja, de uma ferramenta que possa traduzir o código em algo que o JavaScript conheça, e a ferramenta mais utilizada para fazer este processo é o \textit{Babel}. Possui uma sintaxe muito semelhante à do \textit{XML}.  
 \cite{jsx}.
 
-\subsection{React Native}
-
-Para o desenvolvimento móvel do trabalho proposto, será utilizado o framework \textit{React Native}, que é um projeto \textit{open-source} desenvolvido por engenheiros do Facebook. Com este framework é possível criar aplicativos que rodam no sistema operacional Android e ao mesmo tempo, em sistema operacional iOs. Esta característica é chamada híbrida, ou seja, quando é possível o funcionando em mais de uma plataforma. Com a tecnologia proposta serão utilizados componentes nativos para fazer a compilação de um \textit{APP}, tornando-o assim um aplicativo que fica no meio termo entre aplicativo nativo e híbrido, já que comporta componentes nativos mas também é flexível para executar o projeto em mais de uma plataforma.
+\subsection{REACT NATIVE}
+\textit{React Native} é escrito na linguagem \textit{JavaScript}, que é a mais utilizada no mundo atualmente e segundo \citeonline{javascript}, é uma linguagem de comportamento que permite fazer a criação de conteúdos dinâmicos, entre outros. Consiste em ser uma linguagem de alto-nível, padronizada, é uma ferramenta para desenvolvimento de projetos complexos e também age com facilidade em testar o próprio código de forma muito rápida. 
 
 A mão de obra acaba sendo mais cara para programadores que desenvolvem para uma única plataforma, e por este motivo diversas empresas pensam bastante antes de dar início a construção de algo que irá tomar mais tempo e terá um custo maior, já que terá que desenvolver dois projetos simultaneamente. Muitas dessas empresas acabam obtando por desenvolver uma única aplicação que possa abrangir as duas plataformas, e no caso deste trabalho, também foi escolhido o React Native para facilitar a construção do projeto em ambos sistemas operacionais. 
 
-React Native é escrito na linguagem \textit{JavaScript}, que é a mais utilizada no mundo atualmente e segundo \citeonline{javascript}, é uma linguagem de comportamento que permite fazer a criação de conteúdos dinâmicos, entre outros. Consiste em ser uma linguagem de alto-nível, padronizada, é uma ferramenta para desenvolvimento de projetos complexos e também age com facilidade em testar o próprio código de forma muito rápida 
+É um projeto \textit{open-source} desenvolvido por engenheiros do Facebook. Com este framework é possível criar aplicativos que rodam no sistema operacional Android e ao mesmo tempo, em sistema operacional iOs. Esta característica é chamada híbrida, ou seja, quando é possível o funcionando em mais de uma plataforma. Com a tecnologia proposta serão utilizados componentes nativos para fazer a compilação de um \textit{APP}, tornando-o assim um aplicativo que fica no meio termo entre aplicativo nativo e híbrido, já que comporta componentes nativos mas também é flexível para executar o projeto em mais de uma plataforma.
 
-\subsection{Node.JS}
+
+\subsection{NODE.JS}
 Sendo o \textit{NodeJS} uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript e trabalha ao lado do servidor, é que foi escolhido para o desenvolvimento da \textit{API}. \citeonline{node} ressalta que ele integra muito bem com javascript e pode receber muitas requisições sem que haja perca de desempenho, já que utilizando uma única thread ele pode dar conta do número de requisições. A ideia do Node.JS era ser apenas um servidor, mas hoje é possível montar servidores \textit{http} e \textit{https}, bem como \textit{DNS, TCP, Media Server} entre outros.
 
-O líder de soluções \textit{open source} \citeonline{api}, diz que uma \textit{API} é uma interface de programação de aplicações, onde permite integrar \textit{API}'s de outros softwares, podendo assim, realizar a comunicação entre eles. Com este conceito dito, será realizado a integração do \textit{back-end} com a aplicação \textit{front-end} da web e será feita a comunicação entre elas, juntamente com a comunicação do aplicativo.
+O líder de soluções \textit{open source} \citeonline{api}, diz que uma \textit{API} é uma interface de programação de aplicações, onde permite integrar \textit{API}'s de outros softwares, podendo assim, realizar a comunicação entre eles. Com este conceito dito, será realizado a integração do \textit{back-end} com a aplicação \textit{front-end} da web e será feita a comunicação entre elas, juntamente com a comunicação do aplicativo, na qual os registros serão lançamentos no mobile e através de uma sincronização é que será feito o envio dos dados para a \textit{API}, podendo assim fazer a consulta dos dados na página disponível na web.
 
-\subsection{NestJS}
-O \textit{NestJS} foi escolhido dentre as tecnologias, para o desenvolvimento proposto, pois entende-se que pode diminuir o desenvolvimento de erros em tempo de execução, já que o servidor NestJS é compilado sobre um servidor Node.JS. Ele é uma estrutura utilizada para criar aplicativos ao lado do servidor Node.JS eficientes e escaláveis \citeonline{node1}. Esta ferramenta se diferencia na oferta de arquitetura de aplicativos pronta para a criação de aplicativos altamente testáveis, escalonáveis e de fácil manutenção.
+\subsection{NESTJS}
+O \textit{NestJS} foi escolhido dentre as tecnologias, para o desenvolvimento proposto, pois entende-se que pode diminuir o desenvolvimento de erros em tempo de execução, já que o servidor NestJS é compilado sobre um servidor Node.JS. Ele é uma estrutura utilizada para criar aplicativos ao lado do servidor Node.JS eficientes e escaláveis, \citeonline{nest}. Esta ferramenta se diferencia na oferta de arquitetura de aplicativos pronta para a criação de aplicativos altamente testáveis, escalonáveis e de fácil manutenção.
 
-\subsection{React}
-\textit{React} se diferencia de \textit{React Native} por ser uma plataforma voltada para aplicações web. Também pode ser utilizado \textit{JSX} pra facilitar na estrutura da interface do usuário e é uma tecnologia nova que está crescendo muito, também foi criada pelos engenheiros do Facebook e é mantida por comunidades. A escolha da utilização do \textit{React} para codificar o painel web, se deu devido a facilidade de utilização, já que é um framework fracamente acoplado.
+\subsection{REACT}
+\textit{React} se diferencia de \textit{React Native} por ser uma plataforma voltada para aplicações web. Também pode ser utilizado \textit{JSX} pra facilitar na estrutura da interface do usuário e é uma tecnologia nova que está crescendo muito, também foi criada pelos engenheiros do Facebook e é uma biblioteca é mantida por comunidades, que fazem com que a biblioteca cresça cada dia mais. A escolha da utilização do \textit{React} para codificar o painel web, se deu devido a facilidade de utilização, já que é um framework fracamente acoplado. Utiliza-se componentização que faz com que estes componentes sejam facilmente reaproveitados em outros códigos, tornando assim o desenvolvimento mais padronizado, simples e limpo.
 
+\subsection{ECMASCRIPT}
 
-
+\textit{ECMAScript} é a especificação da linguagem de script que o JavaScript implementa. É padronizada pela empresa Ecma International, e por isto leva este nome, já que faz a união da nomenclatura da empresa com a palavra script. Foi lançado em 2015 uma atualização na qual teve muitas melhorias, dentre elas teve simplificação de sintaxe, nova forma de declarar as variáveis, entre outros. \cite{ecma}
+Foi através das evoluções do ESCAScript2, ou ainda, \textit{ES6} e \textit{ES2015} como também pode ser chamado, que a comunidade se sentiu motivada em utilizar bibliotecas e frameworks, como \textit{React} e \textit{React Native}. 
 
 ...
+
+
