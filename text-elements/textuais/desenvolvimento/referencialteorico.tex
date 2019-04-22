@@ -2,59 +2,72 @@
 \chapter{REFERENCIAL TEÓRICO}
 \label{chap:ref_teo}
 
-Neste capítulo serão apresentadas as ferramentas que serão utilizadas no decorrer do presente trabalho, bem como, o conceito básico de cada uma. 
+% Neste capítulo serão apresentadas as ferramentas que serão utilizadas no decorrer do presente trabalho, bem como, o conceito básico de cada uma. 
 
-\section{METODOLOGIAS DE DESENVOLVIMENTO}
+Dentre as ferramentas de desenvolvimento de aplicações móveis existem alguns tópicos que são muito importantes para o desenvolvedor. A primeira pergunta que o desenvolvedor deve se fazer é em qual plataforma o aplicativo deverá funcionar. Atualmente as plataformas mais comuns de serem utilizadas é Android e iOs, e no momento da construção isto deve estar decidido.
 
-Dentre as ferramentas de desenvolvimento de aplicações móveis existem alguns tópicos que são muito importantes para o desenvolvedor. A primeira pergunta que o desenvolvedor deve se fazer é em qual plataforma o aplicativo deverá funcionar. Atualmente as plataformas mais comuns de serem utilizadas é Android, iOs e tem se ouvido pouco falar sobre o Windows Phone, além dessas existem várias outras, e no momento da construção isto deve estar decidido.
-
-Uma segunda ideia de desenvolvimento que o programador deve ter, é saber qual abordagem de desenvolvimento utilizar. \cite{apps} fala em seu artigo que existem três abordagens básicas quanto à forma de desenvolvimento de aplicativos, cada uma com suas potencialidades, restrições e cuidados especiais, as técnicas são as seguintes: desenvolvimento nativo, desenvolvimento web e desenvolvimento híbrido.
+Uma segunda ideia de desenvolvimento que o programador deve ter, é saber qual abordagem de desenvolvimento utilizar.
+\cite{apps} fala em seu artigo que existem três abordagens básicas quanto à forma de desenvolvimento de aplicativos, cada uma com suas potencialidades, restrições e cuidados especiais, as técnicas são as seguintes: desenvolvimento nativo, desenvolvimento web e desenvolvimento híbrido.
 
 \subsection{Aplicativo Nativo}
-Um aplicativo nativo é focado em uma plataforma ou conjunto de dispositivos específicos e desenvolvido pelo modelo de programação desta plataforma. Acrescenta-se \textit{plugins}, que poderão funcionar em apenas uma plataforma e com isto é impedido de utilizar em outras. Aplicativos nativos geralmente são escolhidos como metodologia de desenvolvimento pois conseguem ter um desempenho superior aos web apps e também aos aplicativos híbridos.
+Um aplicativo nativo é focado em uma plataforma ou conjunto de dispositivos específicos e desenvolvido pelo modelo de programação desta plataforma. Ele pode utilizar todos os recursos do telefone, como geolocalização, câmera, aplicativos de mídia, notificações entre outros. Aplicativos nativos geralmente são escolhidos como metodologia de desenvolvimento pois conseguem ter um desempenho superior e por utilizar melhor os recursos do hardware que os aplicativos híbridos e os web apps.
 
 
 \subsection{Aplicativo Web}
-\textit{Web App} como também podem ser chamados, nada mais são que aplicações em que podem ser acessadas através do navegador, tanto do celular quanto do computador ou tablet. Estes aplicativos não ficam disponíveis nas lojas dos sistemas operacionais.
-
+\textit{Web App} como também podem ser chamados, nada mais são que aplicações em que podem ser acessadas através do navegador, tanto do celular quanto do computador ou tablet. Estes aplicativos não ficam disponíveis nas lojas dos sistemas operacionais. São desenvolvidos em \textit{HTML, CSS} e \textit{JavaScript} e reduzem bastante o tempo de desenvolvimento se comparado a um aplicativo híbrido, já que ao escrever a lógica de programação dele para funcionar em um computador, será a mesma para utilização em um smartfone, porém o desempenho é inferir a uma aplicativo nativo.
 
 \subsection{Aplicativo Híbrido}
-As aplicações híbridas, são resultados da execução de um único projeto funcionando normalmente em mais de um sistema operacional simultaneamente. Isso significa que ao criar um aplicativo que execute em um aparelho com sistema operacional Android, ele pode também, funcionar em um aplicativo com sistema operacional iOs e com isto o tempo e custo de desenvolvimento acabam sendo reduzidos.
+As aplicações híbridas, são resultados da execução de um único projeto funcionando normalmente em mais de um sistema operacional simultaneamente. Isso significa que ao criar um aplicativo que executa em um aparelho com sistema operacional Android, ele pode também, funcionar em um aplicativo com sistema operacional iOs e com isto o tempo e custo de desenvolvimento acabam sendo reduzidos. Não é considerado uma aplicaçao que tem fácil acesso à recursos do telefone. Possui desempenho inferior ao aplicativo nativo.
 
-A mão de obra acaba sendo mais cara para programadores que desenvolvem para uma única plataforma, e por este motivo diversas empresas pensam bastante antes de dar início a construção de algo que irá tomar mais tempo e terá um custo maior, já que terá que desenvolver dois projetos simultaneamente. Muitas dessas empresas acabam obtando por desenvolver uma única aplicação que possa abrangir as duas plataformas, e no caso deste trabalho, também foi escolhido uma ferramenta para desenvolver em o React Native para facilitar a construção do projeto em ambos sistemas operacionais. 
+A mão de obra acaba sendo mais cara para programadores que desenvolvem para uma única plataforma, e por este motivo diversas empresas pensam bastante antes de dar início a construção de algo que irá tomar mais tempo e terá um custo maior, já que terá que desenvolver dois projetos simultaneamente. Muitas dessas empresas acabam obtando por desenvolver uma única aplicação que possa abrangir as duas plataformas, e no caso deste trabalho, também foi escolhido o \textit{React Native} para facilitar a construção do projeto em ambos sistemas operacionais. 
 
 
-\section{FERRAMENTAS DE DESENVOLVIMENTO}
+% \subsection{Banco de Dados Relacional}
+
+% \subsection{Banco de Dados Não Relacional}
+
+\section{FERRAMENTAS DE DESENVOLVIMENTO FRONT-END}
 
 \subsection{React Native}
-\textit{React Native} é escrito na linguagem \textit{JavaScript}, que é a mais utilizada no mundo atualmente e segundo \citeonline{javascript}, é uma linguagem de comportamento que permite fazer a criação de conteúdos dinâmicos, entre outros. Consiste em ser uma linguagem de alto-nível, padronizada, é uma ferramenta para desenvolvimento de projetos complexos e também age com facilidade em testar o próprio código de forma muito rápida. 
 
+O \textit{React Native} é um projeto \textit{open-source} desenvolvido por engenheiros do Facebook e mantido por uma comunidade muito grande de voluntários. Com este framework é possível criar aplicativos que rodam no sistema operacional Android e ao mesmo tempo, em sistema operacional iOs. Esta característica é chamada híbrida, ou seja, quando é possível o funcionando em mais de uma plataforma simultaneamente. Com a tecnologia proposta serão utilizados componentes nativos para fazer a compilação de um \textit{APP}, tornando-o assim um aplicativo que fica no meio termo entre aplicativo nativo e híbrido, já que comporta componentes nativos mas também é flexível para executar o projeto em mais de uma plataforma.
 
-É um projeto \textit{open-source} desenvolvido por engenheiros do Facebook. Com este framework é possível criar aplicativos que rodam no sistema operacional Android e ao mesmo tempo, em sistema operacional iOs. Esta característica é chamada híbrida, ou seja, quando é possível o funcionando em mais de uma plataforma. Com a tecnologia proposta serão utilizados componentes nativos para fazer a compilação de um \textit{APP}, tornando-o assim um aplicativo que fica no meio termo entre aplicativo nativo e híbrido, já que comporta componentes nativos mas também é flexível para executar o projeto em mais de uma plataforma.
+\citeonline{javascript}, descreve o \textit{JavaScript} como sendo a linguagem mais utilizada do mundo, é uma linguagem de comportamento que permite fazer a criação de conteúdos dinâmicos, entre outros. Consiste em ser uma linguagem de alto-nível, padronizada, é uma ferramenta para desenvolvimento de projetos complexos e também age com facilidade em testar o próprio código de forma muito rápida. Com \textit{JavaScript} é que o \textit{React Native} é escrito.
 
 
 \subsection{JSX}
 O \textit{JSX} é uma extensão de sintaxe para \textit{JavaScript}, recomendada para auxílio na construção de interface gráfica que será utilizada com o \textit{React} e também com o \textit{React Native} para falicitar a estrutura de códigos durante o desenvolvimento do \textit{front-end}. Ele necessita de um tradutor, ou seja, de uma ferramenta que possa traduzir o código em algo que o JavaScript conheça, e a ferramenta mais utilizada para fazer este processo é o \textit{Babel}. Possui uma sintaxe muito semelhante à do \textit{XML}.  
 \cite{jsx}.
 
+
+\subsection{ReactJS}
+\textit{ReactJS} se diferencia de \textit{React Native} por ser uma plataforma voltada para aplicações web. Também pode ser utilizado \textit{JSX} pra facilitar na estrutura da interface do usuário e é uma tecnologia nova que está crescendo cada dia mais, também foi criada pelos engenheiros do Facebook e esta biblioteca também é mantida por comunidades, na qual fazem com que melhorias constantes sejam realizadas, suprindo cada vez mais a necessidade dos desenvolvedores. A escolha da utilização do \textit{ReactJS} para codificar o painel web, se deu devido a facilidade de utilização, já que é um framework fracamente acoplado. Utiliza-se componentização que faz com que estes componentes sejam facilmente reaproveitados em outros códigos, tornando assim o desenvolvimento mais padronizado, simples e limpo.
+
+\subsection{ECMASCRIPT}
+
+\textit{ECMAScript} é a especificação da linguagem de script que o JavaScript implementa. É padronizada pela empresa Ecma International, e por isto leva este nome, já que faz a união da nomenclatura da empresa com a palavra script. Foi lançado em 2015 uma atualização na qual teve muitas melhorias, dentre elas teve simplificação de sintaxe, nova forma de declarar as variáveis, entre outros \cite{ecma}.
+Foi através das evoluções do ESCAScript2, ou ainda, \textit{ES6} e \textit{ES2015} como também pode ser chamado, que a comunidade se sentiu motivada em utilizar bibliotecas e frameworks, como \textit{React} e \textit{React Native}. 
+
+\section{FERRAMENTAS DE DESENVOLVIMENTO BACK-END}
+
 \subsection{NodeJS}
-Sendo o \textit{NodeJS} uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript e trabalha ao lado do servidor, é que foi escolhido para o desenvolvimento da \textit{API}. \citeonline{node} ressalta que ele integra muito bem com javascript e pode receber muitas requisições sem que haja perca de desempenho, já que utilizando uma única thread ele pode dar conta do número de requisições. A ideia do Node.JS era ser apenas um servidor, mas hoje é possível montar servidores \textit{http} e \textit{https}, bem como \textit{DNS, TCP, Media Server} entre outros.
+Sendo o \textit{NodeJS} uma plataforma para construir aplicações web escaláveis de alta performance, ele utiliza JavaScript e trabalha ao lado do servidor. Esta ferramenta foi escolhida para o desenvolvimento da \textit{API} - (Application Programming Interface. \citeonline{node} ressalta que ele integra muito bem com javascript e pode receber muitas requisições sem que haja perca de desempenho, já que utilizando uma única thread ele pode dar conta do número de requisições. A ideia do Node.JS era ser apenas um servidor, mas hoje é possível montar servidores \textit{http} e \textit{https}, bem como \textit{DNS, TCP, Media Server} entre outros.
 
 O líder de soluções \textit{open source} \citeonline{api}, diz que uma \textit{API} é uma interface de programação de aplicações, onde permite integrar \textit{API}'s de outros softwares, podendo assim, realizar a comunicação entre eles. Com este conceito dito, será realizado a integração do \textit{back-end} com a aplicação \textit{front-end} da web e será feita a comunicação entre elas, juntamente com a comunicação do aplicativo, na qual os registros serão lançamentos no mobile e através de uma sincronização é que será feito o envio dos dados para a \textit{API}, podendo assim fazer a consulta dos dados na página disponível na web.
 
 \subsection{NestJS}
 O \textit{NestJS} foi escolhido dentre as tecnologias, para o desenvolvimento proposto, pois entende-se que pode diminuir o desenvolvimento de erros em tempo de execução, já que o servidor NestJS é compilado sobre um servidor Node.JS. Ele é uma estrutura utilizada para criar aplicativos ao lado do servidor Node.JS eficientes e escaláveis, \citeonline{nest}. Esta ferramenta se diferencia na oferta de arquitetura de aplicativos pronta para a criação de aplicativos altamente testáveis, escalonáveis e de fácil manutenção.
 
-\subsection{ReactJS}
-\textit{React} se diferencia de \textit{React Native} por ser uma plataforma voltada para aplicações web. Também pode ser utilizado \textit{JSX} pra facilitar na estrutura da interface do usuário e é uma tecnologia nova que está crescendo muito, também foi criada pelos engenheiros do Facebook e é uma biblioteca é mantida por comunidades, que fazem com que a biblioteca cresça cada dia mais. A escolha da utilização do \textit{React} para codificar o painel web, se deu devido a facilidade de utilização, já que é um framework fracamente acoplado. Utiliza-se componentização que faz com que estes componentes sejam facilmente reaproveitados em outros códigos, tornando assim o desenvolvimento mais padronizado, simples e limpo.
 
-\subsection{ECMASCRIPT}
+\subsection{MongoDB}
 
-\textit{ECMAScript} é a especificação da linguagem de script que o JavaScript implementa. É padronizada pela empresa Ecma International, e por isto leva este nome, já que faz a união da nomenclatura da empresa com a palavra script. Foi lançado em 2015 uma atualização na qual teve muitas melhorias, dentre elas teve simplificação de sintaxe, nova forma de declarar as variáveis, entre outros. \cite{ecma}
-Foi através das evoluções do ESCAScript2, ou ainda, \textit{ES6} e \textit{ES2015} como também pode ser chamado, que a comunidade se sentiu motivada em utilizar bibliotecas e frameworks, como \textit{React} e \textit{React Native}. 
+(ver citação) -> https://www.mongodb.com/
+MongoDB (do inglês humongous, “gigantesco”) é um banco de dados NoSQL
+orientado à documentos que oferece alta performance, alta disponibilidade, facilidade de
+escalabilidade e armazenamento de grandes massas de dados mantendo uma boa performance.
 
-\subsection{Firebase}
-A utilização do \textit{Firebase} como ferramenta de banco de dados foi escolhida devido ao fato de ser um \textit{Baas} - Backend as a Service que é um serviço disponibilizado em que toda a estrutura do backend, desde configuração de servidor, integração com banco de dados, sistema de \textit{push notification} e outros serviços, que fazem parte do backend, estão completamente prontos para serem integrados com o seu aplicativo. \citeonline{firebase}
+Um poderoso conjunto de serviços que permite que as equipes exponham com segurança seus dados do frontend; criar lógica de back-end, integrações de serviços de terceiros ou APIs; e executar código em resposta a alterações de dados - tudo sem pensar em servidores. Pague apenas pelo que você usa.
+
 
 
 % ********** Tabelas exemplo Diagrama Caso de Uso ********** %
