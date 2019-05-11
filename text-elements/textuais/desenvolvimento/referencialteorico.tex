@@ -9,19 +9,19 @@ Dentre as ferramentas de desenvolvimento de aplicações móveis existem alguns 
 Uma segunda ideia de desenvolvimento que o programador deve ter, é saber qual abordagem de desenvolvimento utilizar.
 \cite{apps} fala em seu artigo que existem três abordagens básicas quanto à forma de desenvolvimento de aplicativos, cada uma com suas potencialidades, restrições e cuidados especiais, as técnicas são as seguintes: desenvolvimento nativo, desenvolvimento web e desenvolvimento híbrido.
 
-\subsection{Aplicativo Nativo}
+\section{Aplicativo Nativo}
 Um aplicativo nativo é focado em uma plataforma ou conjunto de dispositivos específicos e desenvolvido pelo modelo de programação desta plataforma. Ele pode utilizar todos os recursos do telefone, como geolocalização, câmera, aplicativos de mídia, notificações entre outros. 
 
 Aplicativos nativos geralmente são escolhidos como metodologia de desenvolvimento pois conseguem ter um desempenho superior e por utilizar melhor os recursos do hardware que os aplicativos híbridos e os \textit{Web App}.
 
 
-\subsection{Aplicativo Web}
+\section{Aplicativo Web}
 Os Progressive Web Apps são um conjunto de técnicas para desenvolver aplicações web, adicionando progressivamente funcionalidades que antes só eram possíveis em apps nativos. \citeonline{webApps}. 
 
 São aplicações que podem ser acessadas através do navegador, tanto do celular quanto do computador ou tablet. Estes aplicativos não ficam disponíveis nas lojas dos sistemas operacionais. São desenvolvidos em \textit{HTML, CSS} e \textit{JavaScript} e reduzem bastante o tempo de desenvolvimento se comparado a um aplicativo híbrido, já que ao escrever o código desta aplicação para funcionar em um computador, será reaproveitado para que a mesma aplicação seja utilizada em um smartfone. O desempenho de uma \textit{Web App} se torna inferior a um aplicativo nativo.
 
 
-\subsection{Aplicativo Híbrido}
+\section{Aplicativo Híbrido}
 As aplicações híbridas são resultados da execução de um único projeto funcionando normalmente em mais de um sistema operacional simultaneamente. Isso significa que ao criar um aplicativo que executa em um aparelho com sistema operacional Android, ele pode também funcionar em um aplicativo com sistema operacional iOs e com isto o tempo e custo de desenvolvimento acabam sendo reduzidos. Não é considerado uma aplicaçao que tem fácil acesso à recursos do telefone. Possui desempenho inferior ao aplicativo nativo.
 
 A mão de obra acaba sendo mais cara para programadores que desenvolvem para uma única plataforma, e por este motivo diversas empresas pensam bastante antes de dar início a construção de algo que irá tomar mais tempo e terá um custo maior, já que terá que desenvolver dois projetos simultaneamente. Muitas dessas empresas acabam obtando por desenvolver uma única aplicação que possa abrangir as duas plataformas, que também foi o caso do desenvolvimendo deste trabalho. A tecnologia escolhida foi o \textit{React Native} para facilitar a construção do projeto em ambos sistemas operacionais. 
@@ -31,9 +31,9 @@ A mão de obra acaba sendo mais cara para programadores que desenvolvem para uma
 
 % \subsection{Banco de Dados Não Relacional}
 
-\section{FERRAMENTAS DE DESENVOLVIMENTO FRONT-END}
+% \chapter{FERRAMENTAS DE DESENVOLVIMENTO FRONT-END}
 
-\subsection{React Native}
+\section{React Native}
 
 O \textit{React Native} é um projeto \textit{open-source} desenvolvido por engenheiros do Facebook e mantido por uma grande comunidade de voluntários através do \textit{GitHub}. Ele é escrito utilizando a linguagem \textit{JavaScript} na qual é a linguagem mais utilizada do mundo, uma linguagem de comportamento que permite a criação de conteúdos dinâmicos, é considerada uma linguagem de alto-nível, padronizada, utilizada para desenvolvimento de projetos complexos, agindo com facilicdade em testar o próprio código de forma muito rápida.
 
@@ -42,28 +42,28 @@ Com a ferramenta proposta serão utilizados componentes nativos para fazer a com
 % \citeonline{javascript}, descreve o \textit{JavaScript} como sendo a linguagem mais utilizada do mundo, é uma linguagem de comportamento que permite fazer a criação de conteúdos dinâmicos, entre outros. Consiste em ser uma linguagem de alto-nível, padronizada, é uma ferramenta para desenvolvimento de projetos complexos e também age com facilidade em testar o próprio código de forma muito rápida. Com \textit{JavaScript} é que o \textit{React Native} é escrito.
 
 
-\subsection{JSX}
+\section{JSX}
 O \textit{JSX} é uma extensão de sintaxe para \textit{JavaScript}, recomendada para auxílio na construção de interface gráfica que será utilizada com o \textit{React} e também com o \textit{React Native} para falicitar a estrutura de códigos durante o desenvolvimento do \textit{front-end}. Ele necessita de um tradutor, ou seja, de uma ferramenta que possa traduzir o código em algo que o JavaScript conheça, e a ferramenta mais utilizada para fazer este processo é o \textit{Babel}. Possui uma sintaxe muito semelhante à do \textit{XML}.  
 \cite{jsx}.
 
 
-\subsection{ReactJS}
-\textit{ReactJS} se diferencia de \textit{React Native} por ser uma plataforma voltada para aplicações web. Também é uma tecnologia considerada nova, hoje grades empresas também fazem o uso do \textit{ReactJS}, como é o caso do Facebook, Netflix, AirBnB, Instagram entre outros. Também pode ser utilizado \textit{JSX} pra facilitar na estrutura da interface do usuário e é uma tecnologia nova que está crescendo cada dia mais, também foi criada pelos engenheiros do Facebook e inclusive, esta biblioteca é \textit{open source} e mantida por comunidades do \textit{GitHub}, na qual fazem com que melhorias constantes sejam realizadas, suprindo cada vez mais a necessidade dos desenvolvedores.
+\section{ReactJS}
+\textit{ReactJS} se diferencia de \textit{React Native} por ser uma plataforma voltada para aplicações web. É uma biblioteca JavaScript. Também é uma tecnologia considerada nova, hoje grades empresas também fazem o uso do \textit{ReactJS}, como é o caso do Facebook, Netflix, AirBnB, Instagram entre outros. Também pode ser utilizado \textit{JSX} pra facilitar na estrutura da interface do usuário e é uma tecnologia nova que está crescendo cada dia mais, também foi criada pelos engenheiros do Facebook e inclusive, esta biblioteca é \textit{open source} e mantida por comunidades do \textit{GitHub}, na qual fazem com que melhorias constantes sejam realizadas, suprindo cada vez mais a necessidade dos desenvolvedores.
 
 A escolha da utilização do \textit{ReactJS} para codificar o painel web, se deu devido a facilidade de utilização, já que pode ser considerado um framework fracamente acoplado. Utiliza-se componentização que faz com que haja reaproveitamento de código em outras partes do projeto, tornando assim o desenvolvimento mais padronizado, simples e limpo.
 
 
 
-\subsection{ECMASCRIPT}
+\section{ECMASCRIPT}
 
 \textit{ECMAScript} é a especificação da linguagem de script que o JavaScript implementa. É padronizada pela empresa Ecma International, e por isto leva este nome, já que faz a união da nomenclatura da empresa com a palavra script. 
 
 Em 2015 foi lançado uma atualização na qual teve muitas melhorias, dentre elas teve simplificação de sintaxe, nova forma de declarar as variáveis, entre outros \cite{ecma}.
 Foi através das evoluções do ESCAScript2, ou ainda, \textit{ES6} e \textit{ES2015} como também pode ser chamado, que a comunidade se sentiu motivada em utilizar bibliotecas e frameworks, como \textit{React} e \textit{React Native}. 
 
-\section{FERRAMENTAS DE DESENVOLVIMENTO BACK-END}
+% \chapter{FERRAMENTAS DE DESENVOLVIMENTO BACK-END}
 
-\subsection{NodeJS}
+\section{NodeJS}
 NodeJS é uma plataforma JavaScript que executa no lado do servidor possibilitando a construção de aplicações escaláveis e de baixa latência. Com ele é possível construir uma aplicação servidor incrivelmente rápida para atender milhares de requisições concorrentes com um \textit{overhead} mínimo e utilizando um único processo. Sendo um processo de thread única, o consumo de memória é muito baixo em relação a servidores de aplicações atuais, além de ser uma aplicação sem bloqueios de execução. \cite{node}
 
 Apesar da ideia original ser essa, Node não é só um servidor, é possível que sejam montados servidores \textit{http} e  \textit{https}, assim como servidores de  \textit{DNS, TCP, Media Server} e etc. Mas agora também é possível criar aplicações desktop com o  \textit{Node-WebKit} e até mesmo ambientes de desenvolvimento para front-end. \cite{node1}
@@ -73,19 +73,24 @@ Várias outras atividades podem ter sido executadas pelo loop do Node sem ter in
 
 O desevolvimento da \textit{API} - (Application Progress Interface) é feito em JavaScript,  e o líder de soluções \textit{open source} \citeonline{api}, diz que uma \textit{API} é uma interface de programação de aplicações, onde permite integrar \textit{API}'s de outros softwares, podendo assim, realizar a comunicação entre eles. Com este conceito dito, será realizado a integração do \textit{back-end} com a aplicação \textit{front-end} da web e será feita a comunicação entre elas, juntamente com a comunicação do aplicativo, na qual os registros serão lançados no mobile e através de uma sincronização de dados será feito o envio das informações para a \textit{API}, podendo assim fazer a consulta dos dados na página disponível na web.
 
-\subsection{NestJS}
+\section{NestJS}
 O \textit{NestJS} foi escolhido dentre as tecnologias, para o desenvolvimento proposto, pois entende-se que pode diminuir o desenvolvimento de erros em tempo de execução, já que o servidor NestJS é compilado sobre um servidor Node.JS. Esta ferramenta se diferencia na oferta de arquitetura de aplicativos pronta para a criação de aplicativos altamente testáveis, escalonáveis e de fácil manutenção.
 
 Ele é extensivo pois fornece uma verdadeira flexibilidade, permitindo o uso de outras bibliotecas graças à arquitetura modular, organizando o código em módulos separados. Possui um ecossistema adaptável que é um \textit{backbone} completo para todos os tipos de aplicativos do lado do servidor. Aproveita os recursos mais recentes do JavaScript, trazendo padrões de design e soluções maduras para o mundo node.js, tornado-se assim progressivo. \cite{nest}
 
-\subsection{MongoDB}
+\section{Firebase}
+Segundo \citeonline{firebase} o Firebase é um Baas \textit{Backend as a Service} para aplicações Web e Mobile do Google, foi lançado em 2004 e com o passar dos anos cresceu muito. Com este serviço é possível integrar \textit{push notification}, realizar configurações de servidor e também fazer a integração com banco de dados além de outros.
 
-(ver citação) -> https://www.mongodb.com/
-MongoDB (do inglês humongous, “gigantesco”) é um banco de dados NoSQL
-orientado à documentos que oferece alta performance, alta disponibilidade, facilidade de
-escalabilidade e armazenamento de grandes massas de dados mantendo uma boa performance.
+O Firebase utiliza banco de dados hospedado na nuvem e é chamado de Firebase Realtime Database. Os dados são armazenados como JSON e sincronizados em tempo real com todos os clientes conectados. Quando são criadas aplicações em plataformas utilizando SDKs para iOS, Android e JavaScript, todos os clientes compartilham uma instância do Realtime Database e recebem automaticamente atualizações com os dados mais recentes.  \cite{firebase1} 
 
-Um poderoso conjunto de serviços que permite que as equipes exponham com segurança seus dados do frontend; criar lógica de back-end, integrações de serviços de terceiros ou APIs; e executar código em resposta a alterações de dados - tudo sem pensar em servidores. Pague apenas pelo que você usa.
+
+
+% (ver citação) -> https://www.mongodb.com/
+% MongoDB (do inglês humongous, “gigantesco”) é um banco de dados NoSQL
+% orientado à documentos que oferece alta performance, alta disponibilidade, facilidade de
+% escalabilidade e armazenamento de grandes massas de dados mantendo uma boa performance.
+
+% Um poderoso conjunto de serviços que permite que as equipes exponham com segurança seus dados do frontend; criar lógica de back-end, integrações de serviços de terceiros ou APIs; e executar código em resposta a alterações de dados - tudo sem pensar em servidores. Pague apenas pelo que você usa.
 
 
 
