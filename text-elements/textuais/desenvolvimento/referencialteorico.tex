@@ -36,7 +36,12 @@ A mão de obra acaba sendo mais cara para programadores que desenvolvem para uma
 
 \section{React Native}
 
-O \textit{React Native} é um projeto \textit{open-source} desenvolvido por engenheiros do Facebook e mantido por uma grande comunidade de voluntários, através do \textit{GitHub}. Este \textit{framework} é escrito utilizando a linguagem \textit{JavaScript} que é a linguagem mais utilizada do mundo e também, o javaScript é uma linguagem de comportamento que permite a criação de conteúdos dinâmicos, é considerada uma linguagem de alto-nível, padronizada, utilizada para desenvolvimento de projetos complexos, permite a criação de conteúdos dinâmico, agindo com facilidade em testar o próprio código de forma rápida. \cite{javascript}
+O \textit{React Native} é um projeto \textit{open-source} desenvolvido por engenheiros do Facebook e mantido por uma grande comunidade de voluntários, através do \textit{GitHub}. Este \textit{framework} é escrito utilizando a linguagem \textit{JavaScript} que é a linguagem mais utilizada do mundo e também, o \textit{JavaScript} é uma linguagem de comportamento que permite a criação de conteúdos dinâmicos, é considerada uma linguagem de alto-nível, padronizada, utilizada para desenvolvimento de projetos complexos, permite a criação de conteúdos dinâmico, agindo com facilidade em testar o próprio código de forma rápida. \cite{javascript}
+
+O RN utiliza chamadas nativas para que os elementos possam sem renderizados afim de representar os elementos da interface do usuário. Para fazer a renderização desses elementos o \textit{React Native} utiliza um conceito chamando de \textit{Bridge}, e é o que diferencia o \textit{framework}, esta serve para a comunicação do nativo com o \textit{JavaScript}.
+
+\cite{rn} ressalta que existem três \textit{threads} principais que são executadas em uma aplicação utilizando o \textit{framework} React Native, onde uma é utilizada para tratar as requisições relacionadas a renderização de elementos na tela e também pelos gestos reproduzidos pelo usuário, a outra é exclusiva ao React Native, que é responsável por executar o código JavaScript. O JavaScript é o responsável por toda lógica de negócio da aplicação. Além de definir a estrutura e as funcionalidades da interface do usuário. E por último, existe aquela que é a responsável pelos cálculos referentes ao layout. 
+
 
 Ao utilizar a ferramenta \textit{React Native} para a construção de um aplicativo móvel, tem-se o desenvolvimento de um aplicativo considerado nativo na qual, é possível acessar diversos recursos do próprio dispositivo, e mesmo assim manter um único código fonte funcional para mais de uma plataforma simultaneamente e sem perder desempenho por isso. Neste caso de uso será utilizado as plataformas Android e iOS para fazer a compilação dos aplicativos.
 \citeonline{reactNative} diz que o \textit{React Native} é \textit{JavaScript} rodando em uma máquina virtual e controlando a interface do usuário nativa.
@@ -83,7 +88,27 @@ Segundo \citeonline{firebase}, o Firebase é um Baas (\textit{Backend as a Servi
 
 O Firebase utiliza banco de dados hospedado na nuvem chamado de Firebase Realtime Database. Os dados são armazenados como JSON e sincronizados em tempo real com todos os clientes conectados. Quando são criadas aplicações em plataformas utilizando SDKs para iOS, Android e JavaScript, todos os clientes compartilham uma instância do Realtime Database e recebem automaticamente atualizações com os dados mais recentes.  \cite{firebase1} 
 
+\section{Tecnologias já existentes}
+Várias \textit{startups} do Brasil estão criando soluções inovadoras na área do agronegócio. Com o intuito de gerar bons resultados com essas soluções, grandes empresas investem em eventos deste tipo, para que a inovação seja promovida e que novas ideias sejam desenvolvidas.
 
+Um desses eventos contou com a participação da equipe Gravitwave \footnote {Startup brasileira Catarinense que atua com soluções inovadoras no agronegócio, https://gravitwave.com/}, que se destacou com um WebApp para o gerenciamento da criação de porcos a Coopig, e também com outra aplicação para o controle de frangos de corte, chamada Cocoriko. A última citada, conta com a ajuda do produtor rural, para fazer o controle dos gastos e também conduzir o preenchimento da coleta diária das informações de cada aviário.
+
+\begin{figure}[!h]
+    \centering
+    \caption{Tela de login, do aplicativo Cocoriko}
+    \includegraphics[width=0.3\textwidth]{./dados/figuras/cocoriko.png}
+    \fonte{Autor}
+    \label{fig:p1}
+\end{figure}
+
+Uma outra startup que também tem o foco voltado para a agroindústria de aves, é a Stac\footnote{Startup Paranaense que investiu em ferramenta para ajudar o dia a dia do avicultor, https://agrostac.com.br/}. Eles possuem um \textit{hardware} com sensores para captar informações internas dos aviários e um aplicativo chamado AveStac mais focado para a conversão alimentar dos frangos. Conversão esta que é muito importante para gerar lucros no negócio. Além de ter poder fazer o manejo e o planejamento das atividades desenvolvidas pelo avicultor.                                                          \begin{figure}[h]
+    \centering
+    \caption{Telas do aplicativo Avestac}
+    \includegraphics[width=0.3\textwidth]{./dados/figuras/avestac1.png}
+    \includegraphics[width=0.3\textwidth]{./dados/figuras/avestac2.png}
+    \fonte{Autor}
+    \label{fig:p1}
+\end{figure}                                                                       
 
 % ********** Tabelas exemplo Diagrama Caso de Uso ********** %
 
